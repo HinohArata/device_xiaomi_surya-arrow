@@ -47,3 +47,9 @@ ro.recovery.ui.margin_height=48
 
 # WiFi
 wifi.interface=wlan0
+
+# Additional
+# Hardware Description
+ro.device.chipset=Qualcomm® Snapdragon 732G
+ro.device.display_resolution=6.67" IPS LCD 1080x2400
+ro.device.colorbody_phone=Cobalt Blue, Shadow Gray

@@ -12,27 +12,22 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 $(call inherit-product, device/xiaomi/surya/device.mk)
 
 # Inherit some common Afterlife stuff.
-$(call inherit-product, vendor/afterlife/config/common_full_phone.mk)
+$(call inherit-product, vendor/arrow/config/common.mk)
 
-# AfterLife flags
-AFTERLIFE_MAINTAINER := Skyy丨アラタ
+# ArrowOS flags
+DEVICE_MAINTAINER := Skyy丨アラタ
 
 # Bootanimation
 TARGET_BOOT_ANIMATION_RES := 1080
 
-# Offline Charging
-USE_PIXEL_CHARGING := true
+# Quick Taps
+TARGET_SUPPORTS_QUICK_TAP := true
 
 # disable/enable blur support, default is false
 TARGET_SUPPORTS_BLUR := true
 
 # Face Unlock
 TARGET_FACE_UNLOCK_SUPPORTED := true
-
-# Gapps
-WITH_GMS := true
-AFTERLIFE_GAPPS := true
-AFTERLIFE_CORE := true
 
 # Device Manufacture
 PRODUCT_NAME := afterlife_surya
